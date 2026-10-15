@@ -35,7 +35,7 @@ $\forall \epsilon>0, \exists \delta>0$ tale che :
 se 
 	la distanza di un punto qualsiasi $P=(x, y)$ nel dominio, dal punto $(x_{0}, y_{0})$ è inferiore a $\delta$:
 $$
-0<\sqrt{ (x-x_{0})^2 +(y-y_{0})^2}<\delta
+0<\sqrt{ (x-x_{0})^2 +(y-y_{0})^2}<\delta \tag{1}
 $$
 allora:
 	la distanza dell'immagine di $P$ dal valore del limite $l$, è inferiore all'$\epsilon$:
@@ -43,8 +43,48 @@ allora:
 0<|f(x, y)-l|<\epsilon
 $$
 
-Ora consideriamo una generica retta passante per il punto $(x_{0}, y_{0})$, parametrizzata a $t$.
-I punti di questa 
+Ora consideriamo una generica retta passante per il punto $(x_{0}, y_{0})$, parametrizzata a $t$, e con verso: $\vec{v}=(\alpha, \beta)$.
+I punti di questa retta sono netta forma $(x(t), y(t))$:
+$$
+\begin{cases}
+x(t) = x_{0}+\alpha t \\
+y(t) = y_{0}+\beta t
+\end{cases}
+$$
+la funzione $f$, calcolata lungo questa retta sarà:
+$$
+f(x(t), y(t))=f(x_{0}+\alpha t, y_{0}+\beta y)
+$$
+calcolando il limite per $t\to{0}$:
+$$
+\lim_{ t \to 0 } f(x(t), y(t))=l 
+$$
+si deve dimostrare che:
+$\forall \epsilon>0, \exists \mu >0$ tale che:
+se:
+	la distanza da un qualsiasi sulla retta t, dal punto $t=0$, è inferiore a $\mu$:
+	$$
+0<|t-0|<\mu \tag{2}
+$$
+^hyp1
+allora:
+	la distanza dall'immagine di questo punto $t$, dal valore del limite $l$, è inferiore a $\epsilon$:
+	$$
 
+^240d2b
 
+0<|f(x_{0}+\alpha t; y_{0}+\beta t)-l|<\epsilon
+$$
+
+Per dimostrarlo calcoliamo la distanza da un generico punto sulla retta $(x(t), y(y))$ dal punto $(x_{0}, y_{0})$:
+$$
+d(P, P_{0})=\sqrt{ (x_{0}+\alpha t-x_{0})^2 +(y_{0}+\beta t-y_{0})^2}
+$$
+$$
+=\sqrt{ (\alpha t)^2+(\beta t)^2 }=|t|\cdot \sqrt{ \alpha^2+\beta^2 }
+=|t|\cdot K$$
+dall'ipotesi iniziale [[#^hyp1]]dobbiamo garantire che la distanza del punto sulla retta da $(x_{0}, y_{0})$ sia minore di $\delta$:
+$$
+|t|\cdot K < \delta \implies |t|< \frac{\delta}{K}
+$$
 
