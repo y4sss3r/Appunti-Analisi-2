@@ -110,3 +110,4 @@ $$
 si definisce $\mu=\frac{\delta}{K}$
 A questo punto si osserva che se si prende un $t$ tale che $0<t<\mu$, allora la distanza del punto sulla retta da $(x_{0}, y_{0})$ è inferiore a $\delta$, e poiche la distanza è inferiore a $\delta$ questo assicura che il valore dell
 
+
